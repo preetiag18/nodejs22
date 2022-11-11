@@ -1,0 +1,6 @@
+{
+    //comments aren't allowed 
+    firstname:'Vera',
+    "lastname":"River",
+    'notes':`vera is ${person.age}`//this take the age of Matt
+}
