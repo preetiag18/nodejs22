@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <main>
+      <h2>Get all books</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>book ID</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Topic</th>
+            <th>NumberOfBooks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% result.forEach(book => { %>
+          <tr>
+            <td><%= book.bookID %></td>
+            <td><%= book.name %></td>
+            <td><%= book.author %></td>
+            <td><%= book.topic %></td>
+            <td><%= book.numberOfBooks %></td>
+          </tr>
+
+          <% })%>
+        </tbody>
+      </table>
+      <a href="/"><button>Menu</button></a>
+    </main>
+  </body>
+</html>

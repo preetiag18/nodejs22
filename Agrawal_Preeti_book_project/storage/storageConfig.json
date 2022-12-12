@@ -1,0 +1,6 @@
+{
+    "storageFile":"Agrawal_Preeti_books.json",
+    "adapterFile": "bookAdapter.js",
+    "key":"bookID"
+    
+}

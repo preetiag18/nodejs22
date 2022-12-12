@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <h1><%= header1 %></h1>
+      <form action="<%= action %>" method="POST">
+        <div>
+          <p>
+            <label for="id">Book ID:</label>
+            <input
+              type="text"
+              id="id"
+              name="bookID"
+              size="5"
+              value="<%= bookID.value %>"
+              <%= bookID.readonly %>
+            />
+          </p>
+          <p>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              size="25"
+              value="<%= name.value %>"
+              <%= name.readonly %>
+            />
+          </p>
+          <p>
+            <label for="author">author</label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              size="25"
+              value="<%= author.value %>"
+              <%= author.readonly %>
+            />
+          </p>
+          <p>
+            <label for="topic">topic:</label>
+            <input
+              type="text"
+              id="topic"
+              name="topic"
+              size="25"
+              value="<%= topic.value %>"
+              <%= topic.readonly %>
+            />
+          </p>
+          <p>
+            <label for="numberOfBooks">numberOfBooks:</label>
+            <input
+              type="text"
+              id="numberOfBooks"
+              name="numberOfBooks"
+              size="10"
+              value="<%= numberOfBooks.value %>"
+              <%= numberOfBooks.readonly %>
+            />
+          </p>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <a href="/"><button>Go to menu</button></a>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+[
+    {
+        "bookID": 5,
+        "name": "Maria and My",
+        "author": "Jesse River",
+        "topic": "History",
+        "numberOfBooks": 10
+    },
+    {
+        "bookID": 6,
+        "name": "SQL-mysteries",
+        "author": "Isla Shore",
+        "topic": "mystery",
+        "numberOfBooks": 15
+    },
+    {
+        "bookID": 4,
+        "name": "NoSql - New Hope",
+        "author": "Felix Harris",
+        "topic": "inventions",
+        "numberOfBooks": 5
+    },
+    {
+        "bookID": 1,
+        "name": "The adventures of Mike the Millipede",
+        "author": "Emily White",
+        "topic": "Computers",
+        "numberOfBooks": 1
+    },
+    {
+        "bookID": 3,
+        "name": "Hacking databases",
+        "author": "Layla Jones",
+        "topic": "Future SQL",
+        "numberOfBooks": 150
+    },
+    {
+        "bookID": 2,
+        "name": "Rebellion of Sophie Q. Lister",
+        "author": "Antony Lee",
+        "topic": "databases",
+        "numberOfBooks": 7
+    },
+    {
+        "bookID": 7,
+        "name": "Databases - The rise and fall",
+        "author": "Matt Wilson",
+        "topic": "Gaming",
+        "numberOfBooks": 13
+    }
+]

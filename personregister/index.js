@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
 
   if (route === "/") {
     sendFile(res, homePath);
-  } else if (route.startsWith("/styles")) {
+  } else if (route.startsWith("/styles/")) {
     sendFile(res, path.join(__dirname, route), "text/css");
   } else if (route.startsWith("/js/")) {
     sendFile(res, path.join(__dirname, route), "text/javascript");

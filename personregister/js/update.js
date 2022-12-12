@@ -7,6 +7,12 @@
   let searchValueInput;
   let messagearea;
 
+  const showResultSection = () =>
+    resultsection.removeAttribute("class", "hidden");
+  const hideResultSection = () => resultsection.setAttribute("class", "hidden");
+  const showMessage = () => messagearea.removeAttribute("class", "hidden");
+  const hideMessage = () => messagearea.setAttribute("class", "hidden");
+
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
@@ -17,6 +23,19 @@
     messagearea = document.getElementById("messagearea");
 
     document.getElementById("submit").addEventListener("click", submit);
+    keyInput.addEventListener("focus", clear);
+    keyInput.addEventListener("change", () => searchValueInput.focus());
+    searchValueInput.addEventListener("", submit);
+
+    clear();
+    keyInput.focus();
+  }
+
+  function clear() {
+    keyInput.value = "";
+    searchValueInput.value = "";
+    hideMessage();
+    hideResultSection();
   }
 
   async function submit() {
@@ -34,6 +53,8 @@
   }
   function showError(message) {
     messagearea.innerHTML = `<p>${message}</p>`;
+    hideResultSection();
+    showMessage();
   }
 
   function updatePage(searchResult) {
@@ -51,6 +72,8 @@
             </tr>`;
       }
       resultset.innerHTML = htmlString;
+      showResultSection();
+      hideMessage();
     }
   }
 })();
